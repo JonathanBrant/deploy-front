@@ -2,9 +2,6 @@
 import { UserService } from './../../services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Usuario } from 'src/app/models/usuario';
-
-
 
 @Component({
   selector: 'app-login',
@@ -34,6 +31,4 @@ export class LoginComponent implements OnInit {
     error => {this.service.showMensage("Falha no login!");}
     );
   }
-
-
 }
